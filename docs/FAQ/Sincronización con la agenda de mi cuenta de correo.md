@@ -22,7 +22,7 @@ Cuando generamos una acción, el sistema envía un correo al empleado asignado, 
 
 \- Puede configurar las acciones que permiten el envío, yendo al menú Otros-Maestros-Actividad-Envío de VCalendar y activando la opción de envío de vCalendar.
 
-![](../../docs_assets/images/ztGFkSMIMmQTecSvaeYFe8t_9pIc9-QATg.png)
+![](../docs_assets/images/ztGFkSMIMmQTecSvaeYFe8t_9pIc9-QATg.png)
 
   
 

@@ -20,7 +20,7 @@ Resolución : forzaremos la ejecución de los script jobs siguiendo los pasos qu
 
   
 
-![](../../docs_assets/images/EMzhU1tUUBietJmO6sVpRhNYwjfMFPEw7A.png)
+![](../docs_assets/images/EMzhU1tUUBietJmO6sVpRhNYwjfMFPEw7A.png)
 
   
 
@@ -32,7 +32,7 @@ Resolución : forzaremos la ejecución de los script jobs siguiendo los pasos qu
 
   
 
-![](../../docs_assets/images/s8IHb9SnmeJMCxG2lq1nTd4XVH6ZSSvb8Q.png)
+![](../docs_assets/images/s8IHb9SnmeJMCxG2lq1nTd4XVH6ZSSvb8Q.png)
 
   
 

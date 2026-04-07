@@ -20,7 +20,7 @@ Esta será la tabla donde crearemos los campos personalizados o también llamado
 
 Ésta debe tener una relación (foreign key) con crm_Oportunidades con una regla de actualización y eliminación en cascada
 
-![](../../docs_assets/images/HDEt-_VXuIDgNO3d5y_rJ2djavFyivDZGA.png)Nuestra tabla se llamará Pers_Conf_crm_Oportunidades y la crearemos vía scripting desde el Management Studio de SQL Server.
+![](../docs_assets/images/HDEt-_VXuIDgNO3d5y_rJ2djavFyivDZGA.png)Nuestra tabla se llamará Pers_Conf_crm_Oportunidades y la crearemos vía scripting desde el Management Studio de SQL Server.
 
   
 
@@ -90,7 +90,7 @@ Así que entraremos en el CRM en modo modo administrador, y en el apartado de Ob
 
   
 
-![](../../docs_assets/images/kbVjJ15xAiJEOV8KMcRRK_miQGvV5Vaaew.png)
+![](../docs_assets/images/kbVjJ15xAiJEOV8KMcRRK_miQGvV5Vaaew.png)
 
   
 

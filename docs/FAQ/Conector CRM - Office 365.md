@@ -15,7 +15,7 @@ Esta primera versión del conector permite enviar la actividad y los contactos a
   * Un usuario con permisos de administrador será el encargado de activar esta nueva utilidad.
   * Se activa desde el menú otros – office 365 – Integrar aplicación. Donde abrirá una pantalla, como muestra la imagen a continuación, donde establecerá una primera configuración que hará una serie de cambios en la aplicación para que cada usuario pueda conectar su cuenta de office 365.
 
-![](../../docs_assets/images/IYi8AAHWJ6LDzrPmv2jiB-ejjL9BEniFRA.png)
+![](../docs_assets/images/IYi8AAHWJ6LDzrPmv2jiB-ejjL9BEniFRA.png)
 
   
 Los controles de la izquierda activan la funcionalidad por tipo de elemento: Calendario y Contactos. Mientras que los parámetros de la derecha habilitarán la conexión a office 365 para todos los usuarios.
@@ -27,7 +27,7 @@ Una vez un administrador haya activado la funcionalidad, cada usuario podrá con
   * Debe acceder al menú Otros-Office365-Conectar mi cuenta.
   * A continuación, el sistema le pedirá que introduzca sus credenciales para conectar con su cuenta de Office 365. Si le abre 2 ventanas, tendrá que indicar la cuenta en ambas. De no visualizarlas, compruebe que no se hayan quedado ocultas detrás del navegador u otra ventana de aplicación que tenga abierta.
 
-![](../../docs_assets/images/7pWQsTEk8mmPTxehy4Pr_3yjQpG9dQ3DuQ.png)
+![](../docs_assets/images/7pWQsTEk8mmPTxehy4Pr_3yjQpG9dQ3DuQ.png)
 
 ## Cómo enviar mis contactos a mi cuenta de Office 365
 
@@ -49,9 +49,9 @@ Si. Debes ir al acceso a tu perfil, en la esquina superior derecha, y hacer clic
 
 A partir de aquí, el sistema dejará de enviar los elementos que haya seleccionado, pudiéndolo volver a activar en cualquier momento, desde el menú Otros-Office365-Conectar mi cuenta.
 
-![](../../docs_assets/images/W5MNU8W7uD23EZ1ZXNUAEeRtv-4bLQr9vQ.png)
+![](../docs_assets/images/W5MNU8W7uD23EZ1ZXNUAEeRtv-4bLQr9vQ.png)
 
-![](../../docs_assets/images/bplsb_SMpLCYjhM5GfEIZ2oHnfpg3V2LjQ.png)
+![](../docs_assets/images/bplsb_SMpLCYjhM5GfEIZ2oHnfpg3V2LjQ.png)
 
 En el caso de ser un usuario administrador, tendrá acceso a la configuración de todos los usuarios de la aplicación.
 
@@ -59,7 +59,7 @@ En el caso de ser un usuario administrador, tendrá acceso a la configuración d
 
 Si. Un usuario con privilegios de administrador puede ir a los parámetros de la aplicación y desactivar la integración, mediante el parámetro “OfficeIntegration”.
 
-![](../../docs_assets/images/ABnvF5cmEFAjaIQR38A4VWVZ6VxJnuyTIg.png)
+![](../docs_assets/images/ABnvF5cmEFAjaIQR38A4VWVZ6VxJnuyTIg.png)
 
 ## ¿Puedo cambiar el tiempo de sincronización?
 Si. Un usuario administrador, puede acceder al cron job encargado de realizar la sincronización con las cuentas y cambiar el tiempo de espera.
@@ -68,4 +68,4 @@ Debe acceder al área de administración – Lógica y reglas – Tareas Cron. E
 
   
 
-![](../../docs_assets/images/2d1TeEZEUW82WdigJ2a3TuoxPdAqFeWnhw.png)
+![](../docs_assets/images/2d1TeEZEUW82WdigJ2a3TuoxPdAqFeWnhw.png)

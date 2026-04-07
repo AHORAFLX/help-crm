@@ -16,7 +16,7 @@ Puede descargar el instalable en la siguiente dirección: [](https://nuget.flexy
 
 Puede consultar el manual completo de instalación, en el enlace adjunto a este post.ACTUALIZACIONES
 
-Mantenga el producto CRM actualizado. Mire el siguiente video: <https://youtu.be/NUwus1Mp_Aw>
+Mantenga el producto CRM actualizado. Mire el siguiente video: [https://youtu.be/NUwus1Mp_Aw](https://youtu.be/NUwus1Mp_Aw)
 
 Si dispone de una instalación de AHORA ERP, mantenga ésta actualizada para garantizar el correcto funcionamiento de las nuevas versiones de CRM.
 
