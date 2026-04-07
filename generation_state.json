@@ -1,0 +1,84 @@
+{
+  "articles": {
+    "154000130133": {
+      "category_id": "154000119424",
+      "category_name": "CRM by flexygo",
+      "folder_id": "154000308175",
+      "folder_name": "FAQ (CRM)",
+      "last_generated_at": "2026-04-01T13:53:29Z",
+      "path": "docs/CRM by flexygo/FAQ (CRM)/Como instalar el CRM de Flexygo.md",
+      "product": "CRM",
+      "source_updated_at": "2024-10-15T12:57:59Z",
+      "title": "Como instalar el CRM de Flexygo"
+    },
+    "154000130134": {
+      "category_id": "154000119424",
+      "category_name": "CRM by flexygo",
+      "folder_id": "154000308175",
+      "folder_name": "FAQ (CRM)",
+      "last_generated_at": "2026-04-01T13:53:29Z",
+      "path": "docs/CRM by flexygo/FAQ (CRM)/Sincronización con la agenda de mi cuenta de correo.md",
+      "product": "CRM",
+      "source_updated_at": "2024-02-23T11:39:26Z",
+      "title": "Sincronización con la agenda de mi cuenta de correo"
+    },
+    "154000130135": {
+      "category_id": "154000119424",
+      "category_name": "CRM by flexygo",
+      "folder_id": "154000308175",
+      "folder_name": "FAQ (CRM)",
+      "last_generated_at": "2026-04-01T13:53:29Z",
+      "path": "docs/CRM by flexygo/FAQ (CRM)/Ejemplo proceso Crm by Flexygo Envio Pdf por mail.md",
+      "product": "CRM",
+      "source_updated_at": "2024-03-07T15:59:21Z",
+      "title": "Ejemplo proceso Crm by Flexygo Envio Pdf por mail."
+    },
+    "154000130176": {
+      "category_id": "154000119424",
+      "category_name": "CRM by flexygo",
+      "folder_id": "154000308175",
+      "folder_name": "FAQ (CRM)",
+      "last_generated_at": "2026-04-01T13:53:29Z",
+      "path": "docs/CRM by flexygo/FAQ (CRM)/Error al trasladar el CRM al servidor de producción del Cliente.md",
+      "product": "CRM",
+      "source_updated_at": "2024-02-23T11:39:45Z",
+      "title": "Error al trasladar el CRM al servidor de producción del Cliente"
+    },
+    "154000130197": {
+      "category_id": "154000119424",
+      "category_name": "CRM by flexygo",
+      "folder_id": "154000308175",
+      "folder_name": "FAQ (CRM)",
+      "last_generated_at": "2026-04-01T13:53:29Z",
+      "path": "docs/CRM by flexygo/FAQ (CRM)/Conector CRM - Office 365.md",
+      "product": "CRM",
+      "source_updated_at": "2024-02-23T11:37:03Z",
+      "title": "Conector CRM - Office 365"
+    },
+    "154000130204": {
+      "category_id": "154000119424",
+      "category_name": "CRM by flexygo",
+      "folder_id": "154000308175",
+      "folder_name": "FAQ (CRM)",
+      "last_generated_at": "2026-04-01T13:53:29Z",
+      "path": "docs/CRM by flexygo/FAQ (CRM)/Añadir campos personalizados al formulario de edición de oportunidad.md",
+      "product": "CRM",
+      "source_updated_at": "2024-02-23T11:37:25Z",
+      "title": "Añadir campos personalizados al formulario de edición de oportunidad"
+    },
+    "154000130226": {
+      "category_id": "154000119424",
+      "category_name": "CRM by flexygo",
+      "folder_id": "154000308175",
+      "folder_name": "FAQ (CRM)",
+      "last_generated_at": "2026-04-01T13:53:29Z",
+      "path": "docs/CRM by flexygo/FAQ (CRM)/Generar oferta a una delegación de cuenta.md",
+      "product": "CRM",
+      "source_updated_at": "2024-02-23T11:38:45Z",
+      "title": "Generar oferta a una delegación de cuenta"
+    }
+  },
+  "meta": {
+    "last_generated_at": "2026-04-01T13:53:29Z"
+  }
+}
