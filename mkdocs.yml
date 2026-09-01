@@ -1,4 +1,4 @@
-site_name: SAT  # ← Your site name here
+site_name: CRM  # ← Your site name here
 theme:
   name: material
   custom_dir: ./overrides/
