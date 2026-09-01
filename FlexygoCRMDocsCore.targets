@@ -1,0 +1,41 @@
+<Project>
+  <Target Name="SyncFlexygoCRMDocs" BeforeTargets="BeforeBuild">
+    <!-- Carpeta de origen dentro del paquete NuGet -->
+    <PropertyGroup>
+      <FlexygoCRMDocsSource>$(MSBuildThisFileDirectory)..\contentFiles\any\any</FlexygoCRMDocsSource>
+      <FlexygoCRMDocsDestination>$(MSBuildProjectDirectory)\wwwroot\crm</FlexygoCRMDocsDestination>
+    </PropertyGroup>
+
+    <!-- Todos los archivos que queremos copiar -->
+    <ItemGroup>
+      <FlexygoCRMDocsFiles Include="$(FlexygoCRMDocsSource)\**\*.*" />
+    </ItemGroup>
+
+    <Message Text="FlexygoCRMDocs: Sincronizando archivos en $(FlexygoCRMDocsDestination)" Importance="high" />
+
+    <!-- 1️⃣ Archivos existentes en wwwroot (solo docs y versions.json) -->
+    <ItemGroup>
+      <ExistingFlexygoCRMDocs Include="$(FlexygoCRMDocsDestination)\docs\**\*.*" />
+      <ExistingFlexygoCRMDocs Include="$(FlexygoCRMDocsDestination)\versions.json" />
+    </ItemGroup>
+
+    <!-- 2️⃣ Rutas de destino esperadas para cada archivo del paquete -->
+    <ItemGroup>
+      <FlexygoCRMDocsDestFiles Include="@(FlexygoCRMDocsFiles->'$(FlexygoCRMDocsDestination)\%(RecursiveDir)%(Filename)%(Extension)')" />
+    </ItemGroup>
+
+    <!-- 3️⃣ Archivos a eliminar: existen en wwwroot pero NO en el paquete -->
+    <ItemGroup>
+      <FilesToDelete Include="@(ExistingFlexygoCRMDocs)"
+                     Exclude="@(FlexygoCRMDocsDestFiles)" />
+    </ItemGroup>
+
+    <!-- 4️⃣ Eliminar archivos obsoletos -->
+    <Delete Files="@(FilesToDelete)" />
+
+    <!-- 5️⃣ Copiar archivos nuevos o modificados -->
+    <Copy SourceFiles="@(FlexygoCRMDocsFiles)"
+          DestinationFolder="$(FlexygoCRMDocsDestination)\%(RecursiveDir)"
+          SkipUnchangedFiles="true" />
+  </Target>
+</Project>
