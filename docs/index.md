@@ -1,40 +1,46 @@
-# Introducción a CRM
+# Inicio
 
-Ahora CRM es la herramienta completa y definitiva para tu equipo de ventas. Es una aplicación creada y diseñada para facilitar y acelerar la venta de los equipos comerciales. Concentre en una sola aplicación Web toda la actividad comercial, sus agendas, sus empleados y la gestión de reserva de recursos. Analice cómodamente la previsión de ventas de su departamento comercial mediante los cuadros de mando que integra de forma estándar.
+Esta documentación reúne los artículos clave para instalar, configurar y entender el funcionamiento de `SAT by flexygo`, tanto en la parte web como en la app móvil.
 
-Ahora CRM está pensada para funcionar tanto con el modelo de datos de [Ahora ERP](http://www.ahora.es/), como con el propio modelo de datos de CRM.
+Si lo que quieres es ver rápido el flujo real para el usuario final, te conviene empezar por la instalación, seguir por la configuración del entorno y después entrar en los bloques funcionales de la app.
 
-- [Añadir campos personalizados al formulario de edición de oportunidad](FAQ/A%C3%B1adir%20campos%20personalizados%20al%20formulario%20de%20edici%C3%B3n%20de%20oportunidad.md)
-  *Descubre cómo configurar campos personalizados mediante scripting*
-- [Conector CRM - Office 365](FAQ/Conector%20CRM%20-%20Office%20365.md)
-  *Aprende a integrar tu correo con el CRM*
-- [Sincronización con la agenda de mi cuenta de correo](FAQ/Sincronizaci%C3%B3n%20con%20la%20agenda%20de%20mi%20cuenta%20de%20correo.md)
-  *Sincroniza tus contactos en pocos pasos*
-- [Generar oferta a una delegación de cuenta](FAQ/Generar%20oferta%20a%20una%20delegaci%C3%B3n%20de%20cuenta.md)
-  *Pasos a seguir para crear ofertas asociadas a delegaciones*
+## Accesos rápidos
 
-## Tecnologías de CRM
+- [Cómo instalar el SAT de Flexygo](./FAQ/Como%20instalar%20el%20SAT%20de%20Flexygo.md)
+- [Pasos a seguir tras la instalación de SAT by flexygo](./FAQ/Pasos%20a%20seguir%20tras%20la%20instalaci%C3%B3n%20de%20SAT%20by%20flexygo.md)
+- [Compatibilidad del producto Sat by Flexygo con el ERP de Ahora](./FAQ/Compatibilidad%20del%20producto%20Sat%20by%20Flexygo%20con%20el%20ERP%20de%20Ahora.md)
+- [Nivel de compatibilidad de la base de datos](./FAQ/Nivel%20de%20compatibilidad%20de%20la%20base%20de%20datos.md)
 
-Ahora CRM está desarrollado apoyándose en la tecnología de Flexygo, proporcionando una base moderna y de alto rendimiento. Al igual que Flexygo, ofrece una gran flexibilidad arquitectónica e infraestructura robusta.
+## App Web
 
-### Front End
-Al desarrollar o personalizar tu CRM podrás utilizar las propias herramientas de Flexygo, con vistas y componentes adaptados específicamente para los módulos de ventas y comerciales de la herramienta. 
+Documentación pensada para entender la puesta en marcha y el comportamiento del entorno web.
 
-### Back End
-Gracias a la potencia del ecosistema de AHORA, el CRM permite su conexión fluida con bases de datos estándar y dispone de APIs internas para asegurar la conectividad con Ahora ERP u otras soluciones.
+- [AHORA SAT - App Web - Configuración](./FAQ/AHORA%20SAT%20-%20App%20Web%20-%20Configuraci%C3%B3n.md)
+- [AHORA SAT - App Web - Entorno](./FAQ/AHORA%20SAT%20-%20App%20Web%20-%20Entorno.md)
+- [AHORA SAT - App Web - Funcionalidad](./FAQ/AHORA%20SAT%20-%20App%20Web%20-%20Funcionalidad.md)
 
-## Funcionalidades Clave
+## App Móvil
 
-### Entidades y Oportunidades
-Los objetos y módulos de Ahora CRM incluyen todo lo necesario para gestionar un Cliente, un Contacto o una Oportunidad Comercial: su estructura de datos, formularios, vistas de listado e informes vinculados. 
+Bloque centrado en el uso funcional de la aplicación móvil y en los flujos habituales de trabajo.
 
-### Cuadros de Mando
-El producto facilita el análisis y previsión de ventas mediante los cuadros de mando que integra de forma estándar, ahorrando configuraciones complejas para visualizar el embudo de ventas o el rendimiento del equipo.
+- [AHORA SAT - App móvil - Instalación y entorno](./FAQ/AHORA%20SAT%20-%20App%20m%C3%B3vil%20-%20Instalaci%C3%B3n%20y%20entorno.md)
+- [AHORA SAT - App móvil - Alcance funcional](./FAQ/AHORA%20SAT%20-%20App%20m%C3%B3vil%20-%20Alcance%20funcional.md)
+- [AHORA SAT - App móvil - Clientes](./FAQ/AHORA%20SAT%20-%20App%20m%C3%B3vil%20-%20Clientes.md)
+- [AHORA SAT - App móvil - Partes](./FAQ/AHORA%20SAT%20-%20App%20m%C3%B3vil%20-%20Partes.md)
 
-### Movilidad y Colaboración
-El CRM está pensado para el equipo comercial, posibilitando consultar la información y un seguimiento detallado en el momento.
+## Soporte técnico
 
-## FAQ Recomendadas
-- [Como instalar el CRM de Flexygo](FAQ/Como%20instalar%20el%20CRM%20de%20Flexygo.md)
-- [Ejemplo proceso Crm by Flexygo Envio Pdf por mail](FAQ/Ejemplo%20proceso%20Crm%20by%20Flexygo%20Envio%20Pdf%20por%20mail.md)
-- [Error al trasladar el CRM al servidor de producción del Cliente](FAQ/Error%20al%20trasladar%20el%20CRM%20al%20servidor%20de%20producci%C3%B3n%20del%20Cliente.md)
+Cuando ya está implantado y toca revisar incidencias o afinar comportamiento, estos artículos suelen ser los más útiles.
+
+- [Acceso a la base de datos Flexygo App Offline](./FAQ/Acceso%20a%20la%20base%20de%20datos%20Flexygo%20App%20Offline.md)
+- [Depurar error en sincronización en Sat](./FAQ/Depurar%20error%20en%20sincronizaci%C3%B3n%20en%20Sat.md)
+
+## Recorrido recomendado
+
+1. Instalar el producto.
+2. Revisar los pasos posteriores a la instalación.
+3. Confirmar compatibilidad con ERP y base de datos.
+4. Entrar en la configuración y el entorno web.
+5. Pasar a la app móvil y a sus procesos funcionales.
+
+Así tendrás una visión bastante completa antes de entrar en soporte o en detalles más técnicos.
