@@ -12,18 +12,18 @@ Accede a nuestro [curso online en Udemy](https://www.udemy.com/course/ahora-crm/
 
 También puedes explorar la funcionalidad leyendo la documentación por áreas funcionales:
 
-- [Cuenta](Ayuda/Cuenta.md)
-- [Oportunidad](Ayuda/Oportunidad.md)
-- [Calendario](Ayuda/Calendario.md)
-- [Gastos](Ayuda/Gastos.md)
-- **Otros** *(ver el desplegable "Otros" del menú lateral, dentro de Ayuda: ofertas, artículos, empleados, contactos, maestros, herramientas, objetivos, equipos, importaciones, Office 365, seguridad, cobros y etiquetas)*
-- [Análisis y notificaciones](Ayuda/An%C3%A1lisis%20y%20notificaciones.md)
-- [Web Mail](Ayuda/Web%20Mail.md)
-- [Envío masivo de correos y listas de contactos](Ayuda/Env%C3%ADo%20masivo%20de%20correos%20y%20listas%20de%20contactos.md)
-- [Glosario general](Ayuda/Glosario%20general.md)
-- [Offline](Ayuda/Aplicaci%C3%B3n%20Offline.md)
-- [Inteligencia artificial](Ayuda/Inteligencia%20artificial.md)
 - [3CX](Ayuda/Integraci%C3%B3n%20con%203CX.md)
+- [Análisis y notificaciones](Ayuda/An%C3%A1lisis%20y%20notificaciones.md)
+- [Calendario](Ayuda/Calendario.md)
+- [Cuenta](Ayuda/Cuenta.md)
+- [Envío masivo de correos y listas de contactos](Ayuda/Env%C3%ADo%20masivo%20de%20correos%20y%20listas%20de%20contactos.md)
+- [Gastos](Ayuda/Gastos.md)
+- [Glosario general](Ayuda/Glosario%20general.md)
+- [Inteligencia artificial](Ayuda/Inteligencia%20artificial.md)
+- [Offline](Ayuda/Aplicaci%C3%B3n%20Offline.md)
+- [Oportunidad](Ayuda/Oportunidad.md)
+- **Otros** *(ver el desplegable "Otros" del menú lateral, dentro de Ayuda: ofertas, artículos, empleados, contactos, maestros, herramientas, objetivos, equipos, importaciones, Office 365, seguridad, cobros y etiquetas)*
+- [Web Mail](Ayuda/Web%20Mail.md)
 
 ## Tecnologías de CRM
 
