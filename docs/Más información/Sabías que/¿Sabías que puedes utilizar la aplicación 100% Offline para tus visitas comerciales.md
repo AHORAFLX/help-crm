@@ -1,5 +1,3 @@
-# ¿Sabías que desde dentro de la propia aplicación tienes acceso tanto a la ayuda como a la formación?
+# ¿Sabías que puedes utilizar la aplicación 100% Offline para tus visitas comerciales?
 
-El producto CRM ya dispone de una ayuda integrada, así como acceso a los distintos apartados de formación como los vídeos y cursos.
-
-![](../../docs_assets/images/AyudaFormacionIntegrada.png)
+Con el lanzamiento de las últimas versiones de AHORA CRM, tu equipo de ventas ya no depende de una conexión a internet para continuar trabajando en movilidad. La herramienta permite gestionar actuaciones, cuentas y oportunidades con ofertas totalmente en modo offline. En cuanto el dispositivo recupera la cobertura, todos los datos se pueden sincronizar con el servidor central para que no se pierda nada de información.

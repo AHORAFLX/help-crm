@@ -1,5 +1,5 @@
-# ¿Sabías que desde dentro de la propia aplicación tienes acceso tanto a la ayuda como a la formación?
+# ¿Sabías que el CRM de Flexygo cuenta con agentes de inteligencia artificial dedicados?
 
-El producto CRM ya dispone de una ayuda integrada, así como acceso a los distintos apartados de formación como los vídeos y cursos.
+CRM by Flexygo no es solo un gestor de clientes, está completamente potenciado por la arquitectura de IA nativa de Flexygo. A través de asistentes especializados en la gestión de clientes, oportunidades, ofertas, actuaciones, a diversos niveles, e incluso en modo offline.
 
-![](../../docs_assets/images/AyudaFormacionIntegrada.png)
+![](../../docs_assets/images/AgentesIACRM.png)

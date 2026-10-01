@@ -1,5 +1,4 @@
-# ¿Sabías que desde dentro de la propia aplicación tienes acceso tanto a la ayuda como a la formación?
+# ¿Sabías que puedes implementar el CRM de forma totalmente autónoma sin tener AHORA ERP?
 
-El producto CRM ya dispone de una ayuda integrada, así como acceso a los distintos apartados de formación como los vídeos y cursos.
+Aunque su integración nativa con el modelo de datos de AHORA ERP es excelente, CRM by Flexygo es completamente autónomo. Durante el despliegue mediante el CRM Installer, puedes configurarlo seleccionando el modelo de datos propio de CRM. Esto te permite disfrutar de una vista 360º del cliente, pipelines e imputación de costes sin necesidad de disponer de licencias ni infraestructura previa del ERP.
 
-![](../../docs_assets/images/AyudaFormacionIntegrada.png)
