@@ -19,6 +19,9 @@ La API es la de Flexygo y sigue el estándar **OpenAPI**: la definición complet
 
 Cada objeto lleva en la definición de la API una descripción de para qué sirve y de qué significan sus campos codificados (estados, tipos…). Los campos de uso interno no se publican.
 
+!!! note "Los objetos `Offline_*`"
+    La definición incluye también los objetos `Offline_*`, que usa la aplicación offline del CRM para sincronizar. Para integraciones hay que usar los objetos `crm_*`.
+
 ### Vistas de totales
 
 | Vista | Qué devuelve |
@@ -164,8 +167,6 @@ Postman puede cargar la definición de la API y crear una colección con todas l
 2. Postman crea la colección **FlexygoCRM Web API**, con una carpeta por objeto y las llamadas de cada uno: listar, ver por id, crear, modificar, vistas y procesos.
 3. En la pestaña **Authorization** de la colección ya viene configurado **OAuth 2.0** con el tipo *Password Credentials* y la dirección del token. Escribe el usuario y la contraseña del CRM, pulsa **Get New Access Token** y después **Use Token**.
 4. La dirección de la aplicación está en la variable `baseUrl` de la colección. Si la aplicación está detrás de un proxy y la dirección no es la correcta, cámbiala ahí.
-
-La colección incluye también los objetos `Offline_*`, que usa la aplicación offline del CRM. Para integraciones conviene usar los objetos `crm_*`.
 
 También puedes consultar la referencia de la API en el navegador, en `https://<tu-aplicación>/scalar`.
 
