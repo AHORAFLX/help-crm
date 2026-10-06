@@ -2,6 +2,9 @@
 
 Ahora CRM lleva incorporados ciertos asistentes de IA que nos ayudarán con la gestión comercial, tanto en un entorno online como offline, gracias a la integración con OpenAI que incorpora Flexygo.
 
+!!! tip "¿Prefieres usar tu propio asistente?"
+    También puedes conectar al CRM tu asistente de IA de siempre (Claude, ChatGPT, Gemini…): ver [Asistentes de IA (MCP)](Asistentes%20de%20IA%20(MCP).md).
+
 ## Configuración de asistente IA
 
 Para poder empezar a utilizar esta funcionalidad es necesario obtener una key de OpenAI para utilizar ChatGPT y asignarla a los asistentes. Para más información puede consultar la ayuda de Flexygo sobre la integración con OpenAI.
