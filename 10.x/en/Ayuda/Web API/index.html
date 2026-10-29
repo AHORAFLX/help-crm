@@ -1,0 +1,2282 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Oportunidad/">
+      
+      
+        <link rel="next" href="../Web%20Mail/">
+      
+      
+      <link rel="icon" href="../../../docs_assets/images/logos/Isotipo-AHORA.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Web API - CRM</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/custom-colors.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/custom.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/fh-structural/base.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/fh-structural/code-highlighting.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/fh-structural/css-class-components.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/fh-structural/404-error.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/fh-structural/components/fh-modal.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/fh-structural/components/fh-copy.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/fh-structural/components/fh-namepropagator.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/fh-structural/components/fh-versions.css">
+    
+      <link rel="stylesheet" href="../../../docs_assets/fh-structural/fonts/flags/flags.css">
+    
+      <link rel="stylesheet" href="../../../docs_assets/fh-structural/fonts/flexygo/utils.css">
+    
+      <link rel="stylesheet" href="../../../docs_assets/fh-structural/fonts/flexygo/flexygo-icons.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#web-api" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden="">
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../" title="CRM" class="md-header__button md-logo" aria-label="CRM" data-md-component="logo">
+      
+  <img src="../../../docs_assets/images/logos/AHORA-white.svg" alt="logo">
+
+      Docs
+    </a>
+    <fh-versions></fh-versions>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+          </span>
+        </div>
+      </div>
+    </div>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options fh-search-shortcut" aria-label="Search">
+        CTRL + K
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"></path></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <span onclick="changeLanguage('en')" class="md-select__link">
+              English
+            </span>
+          </li>
+        
+          <li class="md-select__item">
+            <span onclick="changeLanguage('es')" class="md-select__link">
+              Español
+            </span>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="darkmode" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8m0-1.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5m5.657-8.157a.75.75 0 0 1 0 1.061l-1.061 1.06a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734l1.06-1.06a.75.75 0 0 1 1.06 0Zm-9.193 9.193a.75.75 0 0 1 0 1.06l-1.06 1.061a.75.75 0 1 1-1.061-1.06l1.06-1.061a.75.75 0 0 1 1.061 0M8 0a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0V.75A.75.75 0 0 1 8 0M3 8a.75.75 0 0 1-.75.75H.75a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 3 8m13 0a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 16 8m-8 5a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 13m3.536-1.464a.75.75 0 0 1 1.06 0l1.061 1.06a.75.75 0 0 1-1.06 1.061l-1.061-1.06a.75.75 0 0 1 0-1.061M2.343 2.343a.75.75 0 0 1 1.061 0l1.06 1.061a.75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018l-1.06-1.06a.75.75 0 0 1 0-1.06Z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="fh-sidebar md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="fh-sidebarheader">
+                  <a href="../../" title="CRM" class="md-header__button md-logo" aria-label="CRM" data-md-component="logo">
+                    
+  <img src="../../../docs_assets/images/logos/AHORA-white.svg" alt="logo">
+
+                    CRM
+                  </a>
+                  <fh-versions></fh-versions>
+                </div>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+    
+    <ul class="md-nav__list" data-md-scrollfix="">
+        
+            
+            
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción a CRM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+        
+            
+            
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ayuda
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Ayuda
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../An%C3%A1lisis%20y%20notificaciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Análisis y notificaciones
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Aplicaci%C3%B3n%20Offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicación Offline
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Asistentes%20de%20IA%20%28MCP%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Asistentes de IA conectados al CRM (MCP)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Ayuda%20contextual%20de%20campos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ayuda contextual de campos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Calendario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Calendario
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cuenta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cuenta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Env%C3%ADo%20masivo%20de%20correos%20y%20listas%20de%20contactos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Envío masivo de correos y listas de contactos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Gastos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gastos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Glosario%20general/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glosario general
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Google%20Integration%20Console/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Google Integration Console
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Integraci%C3%B3n%20con%203CX/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integración con 3CX
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Integraci%C3%B3n%20con%20Google/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integración con Google
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Inteligencia%20artificial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inteligencia artificial
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Oportunidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Oportunidad
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Web API
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Web API
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#que-se-puede-hacer-con-la-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Qué se puede hacer con la API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qué se puede hacer con la API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vistas-de-totales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vistas de totales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procesos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procesos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-seguridad-es-la-misma-que-en-la-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      La seguridad es la misma que en la aplicación
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activar-la-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activar la API
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pedir-el-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pedir el token
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#los-filtros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Los filtros
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probar-la-api-con-postman" class="md-nav__link">
+    <span class="md-ellipsis">
+      Probar la API con Postman
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#si-algo-no-sale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Si algo no sale
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Web%20Mail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Web Mail
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_17">
+        
+          
+          <label class="md-nav__link" for="__nav_2_17" id="__nav_2_17_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Otros
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_17">
+            <span class="md-nav__icon md-icon"></span>
+            Otros
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Otros/Actividad%20de%20cobro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Actividad de cobro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Otros/Art%C3%ADculos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Artículos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Otros/Contactos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contactos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Otros/Empleados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Empleados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Otros/Equipos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Equipos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Otros/Etiquetas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Etiquetas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Otros/Grupos%20de%20usuarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Grupos de usuarios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Otros/Herramientas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Herramientas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Otros/Importador%20de%20cuentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Importador de cuentas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Otros/Integraci%C3%B3n%20con%20Office%20365/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integración con Office 365
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Otros/Maestros/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Maestros
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Otros/Objetivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Objetivos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Otros/Ofertas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ofertas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+        
+            
+            
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Más información
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Más información
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1">
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Preguntas frecuentes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Preguntas frecuentes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M%C3%A1s%20informaci%C3%B3n/Preguntas%20frecuentes/A%C3%B1adir%20campos%20personalizados%20al%20formulario%20de%20edici%C3%B3n%20de%20oportunidad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Añadir campos personalizados al formulario de edición de oportunidad
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M%C3%A1s%20informaci%C3%B3n/Preguntas%20frecuentes/Como%20instalar%20el%20CRM%20de%20Flexygo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Como instalar el CRM de Flexygo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M%C3%A1s%20informaci%C3%B3n/Preguntas%20frecuentes/Conector%20CRM%20-%20Office%20365/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conector CRM - Office 365
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M%C3%A1s%20informaci%C3%B3n/Preguntas%20frecuentes/Ejemplo%20proceso%20Crm%20by%20Flexygo%20Envio%20Pdf%20por%20mail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ejemplo proceso Crm by Flexygo Envio Pdf por mail.
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M%C3%A1s%20informaci%C3%B3n/Preguntas%20frecuentes/Error%20al%20trasladar%20el%20CRM%20al%20servidor%20de%20producci%C3%B3n%20del%20Cliente/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error al trasladar el CRM al servidor de producción del Cliente
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M%C3%A1s%20informaci%C3%B3n/Preguntas%20frecuentes/Generar%20oferta%20a%20una%20delegaci%C3%B3n%20de%20cuenta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Generar oferta a una delegación de cuenta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M%C3%A1s%20informaci%C3%B3n/Preguntas%20frecuentes/Sincronizaci%C3%B3n%20con%20la%20agenda%20de%20mi%20cuenta%20de%20correo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sincronización con la agenda de mi cuenta de correo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2">
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Sabías que
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Sabías que
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M%C3%A1s%20informaci%C3%B3n/Sab%C3%ADas%20que/%C2%BFSab%C3%ADas%20que%20ahora%20puedes%20modificar%20el%20orden%20de%20las%20l%C3%ADneas%20de%20oferta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ¿Sabías que ahora puedes modificar el orden de las líneas de oferta?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M%C3%A1s%20informaci%C3%B3n/Sab%C3%ADas%20que/%C2%BFSab%C3%ADas%20que%20dentro%20de%20la%20propia%20aplicacion%20tienes%20acceso%20a%20la%20ayuda%20y%20formaci%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ¿Sabías que desde dentro de la propia aplicación tienes acceso tanto a la ayuda como a la formación?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M%C3%A1s%20informaci%C3%B3n/Sab%C3%ADas%20que/%C2%BFSab%C3%ADas%20que%20el%20CRM%20de%20Flexygo%20cuenta%20con%20agentes%20de%20Inteligencia%20Artificial%20dedicados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ¿Sabías que el CRM de Flexygo cuenta con agentes de inteligencia artificial dedicados?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M%C3%A1s%20informaci%C3%B3n/Sab%C3%ADas%20que/%C2%BFSab%C3%ADas%20que%20en%20la%20aplicaci%C3%B3n%20CRM%20puedes%20establecer%20Objetivos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ¿Sabías que en la aplicación CRM puedes establecer Objetivos?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M%C3%A1s%20informaci%C3%B3n/Sab%C3%ADas%20que/%C2%BFSab%C3%ADas%20que%20la%20aplicaci%C3%B3n%20CRM%20ya%20dispone%20de%20una%20app%20offline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ¿Sabías que la aplicación CRM ya dispone de una app offline?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M%C3%A1s%20informaci%C3%B3n/Sab%C3%ADas%20que/%C2%BFSab%C3%ADas%20que%20puedes%20conectar%20el%20CRM%20con%20otras%20aplicaciones%20y%20con%20tu%20asistente%20de%20IA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ¿Sabías que puedes conectar el CRM con otras aplicaciones y con tu asistente de IA?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M%C3%A1s%20informaci%C3%B3n/Sab%C3%ADas%20que/%C2%BFSab%C3%ADas%20que%20puedes%20implementar%20el%20CRM%20de%20forma%20totalmente%20aut%C3%B3noma%20sin%20tener%20AHORA%20ERP/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ¿Sabías que puedes implementar el CRM de forma totalmente autónoma sin tener AHORA ERP?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M%C3%A1s%20informaci%C3%B3n/Sab%C3%ADas%20que/%C2%BFSab%C3%ADas%20que%20puedes%20utilizar%20la%20aplicaci%C3%B3n%20totalmente%20Offline%20para%20tus%20visitas%20comerciales/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ¿Sabías que puedes utilizar la aplicación totalmente Offline para tus visitas comerciales?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Versiones
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Versiones
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../M%C3%A1s%20informaci%C3%B3n/Versiones/Version10_0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Versión 10.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+        
+    </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            <div class="fh-maincontainer">
+              
+                <div class="md-content" data-md-component="content">
+                  <article class="md-content__inner md-typeset">
+                    
+                      
+
+
+
+<h1 id="web-api">Web API<a class="headerlink" href="#web-api" title="Permanent link">¶</a></h1>
+<p>El CRM se puede usar desde otros programas a través de su <strong>Web API</strong>: un ERP, una herramienta de automatización como n8n o Power Automate, una hoja de cálculo o un script pueden consultar cuentas, dar de alta actuaciones, crear oportunidades u ofertas y lanzar procesos del CRM, sin abrir la aplicación.</p>
+<p>La API es la de Flexygo y sigue el estándar <strong>OpenAPI</strong>: la definición completa está en <code>https://&lt;tu-aplicación&gt;/webapi</code> y se puede importar en Postman o en cualquier herramienta compatible (ver <a href="#probar-la-api-con-postman">Probar la API con Postman</a>). La referencia técnica de todos los métodos está en la ayuda de Flexygo, apartado <em>Ayuda › Programación › API Web</em>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Usa siempre HTTPS</p>
+<p>La API recibe el usuario y la contraseña para pedir el token. En producción, la aplicación tiene que publicarse con HTTPS.</p>
+</div>
+<h2 id="que-se-puede-hacer-con-la-api">Qué se puede hacer con la API<a class="headerlink" href="#que-se-puede-hacer-con-la-api" title="Permanent link">¶</a></h2>
+<h3 id="objetos">Objetos<a class="headerlink" href="#objetos" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Qué se puede hacer</th>
+<th>Objetos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Consultar, crear, modificar y borrar</strong></td>
+<td>Cuentas (<code>crm_Cliente</code>), contactos (<code>crm_Contacto</code>), actuaciones: llamadas, visitas, reuniones y tareas (<code>crm_Actuacion</code>), oportunidades (<code>crm_Oportunidad</code>), notas de cuenta (<code>crm_Clientes_Nota</code>) y notas de contacto (<code>crm_Contactos_Nota</code>)</td>
+</tr>
+<tr>
+<td><strong>Consultar, crear y modificar</strong> (sin borrar)</td>
+<td>Ofertas (<code>crm_Oferta</code>) y sus líneas (<code>crm_Oferta_Linea</code>), gastos (<code>crm_Gasto</code>) y sus líneas (<code>crm_Gasto_Linea</code>), reservas de recursos (<code>crm_ReservaRecurso</code>)</td>
+</tr>
+<tr>
+<td><strong>Solo consultar</strong></td>
+<td>Facturas (<code>crm_ERP_Factura</code>), cobros pendientes (<code>crm_ERP_CobroPdte</code>), artículos y sus precios, listas de precios, empleados, empresa, delegaciones, recursos, el registro de cambios de las oportunidades y las tablas auxiliares: tipos de actividad y de oportunidad, motivos de pérdida, de rechazo y de bloqueo, sectores, orígenes, subtipos, tipos de contacto y de gasto, etiquetas, países, provincias, poblaciones, códigos postales, IVA y monedas</td>
+</tr>
+</tbody>
+</table>
+<p>Cada objeto lleva en la definición de la API una descripción de para qué sirve y de qué significan sus campos codificados (estados, tipos…). Los campos de uso interno no se publican.</p>
+<div class="admonition note">
+<p class="admonition-title">Los objetos <code>Offline_*</code></p>
+<p>La definición incluye también los objetos <code>Offline_*</code>, que usa la aplicación offline del CRM para sincronizar. Para integraciones hay que usar los objetos <code>crm_*</code>.</p>
+</div>
+<h3 id="vistas-de-totales">Vistas de totales<a class="headerlink" href="#vistas-de-totales" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Vista</th>
+<th>Qué devuelve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>crm_Oportunidad/crm_oportunidades_totales</code></td>
+<td>Embudo de ventas: número de oportunidades e importe previsto, total y por fase</td>
+</tr>
+<tr>
+<td><code>crm_Oportunidad/crm_oportunidades_totales_por_empleado</code></td>
+<td>El mismo embudo, por empleado responsable</td>
+</tr>
+<tr>
+<td><code>crm_Oferta/crm_oferta_totales</code></td>
+<td>Número e importe de las ofertas: generadas, visadas, aceptadas y rechazadas</td>
+</tr>
+<tr>
+<td><code>crm_Cliente/Totales_listado_cliente</code></td>
+<td>Recuento de cuentas: total, activas, bloqueadas, potenciales y clientes</td>
+</tr>
+<tr>
+<td><code>crm_Cliente/crm_cliente_resumen_ventas_anual</code></td>
+<td>Resumen de ventas de una cuenta: pedidos y albaranes pendientes y facturación de este año y de los dos anteriores</td>
+</tr>
+<tr>
+<td><code>crm_Empleado/crm_comercial_resumen_ventas_anual</code></td>
+<td>El mismo resumen, de las cuentas de un comercial</td>
+</tr>
+<tr>
+<td><code>crm_ERP_CobroPdte/Totalizador_detalle_Cobros</code></td>
+<td>Deuda pendiente por cuenta</td>
+</tr>
+</tbody>
+</table>
+<h3 id="procesos">Procesos<a class="headerlink" href="#procesos" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Sobre</th>
+<th>Procesos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Actuaciones</td>
+<td>Marcar como pendiente o como realizada</td>
+</tr>
+<tr>
+<td>Cuentas</td>
+<td>Bloquear y desbloquear, cambiar el estado del lead (prospección, contactado, cualificado), convertir un potencial en cliente (necesita el NIF) y crear una oferta rápida</td>
+</tr>
+<tr>
+<td>Contactos</td>
+<td>Bloquear y desbloquear</td>
+</tr>
+<tr>
+<td>Oportunidades</td>
+<td>Avanzar de fase, finalizar (ganada o perdida) y generar una oferta</td>
+</tr>
+<tr>
+<td>Ofertas</td>
+<td>Marcar como generada, visar, aceptar y rechazar</td>
+</tr>
+<tr>
+<td>Cobros</td>
+<td>Registrar una gestión de cobro</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">CRM sin AHORA ERP (CRM Lite)</p>
+<p>En una instalación de CRM Lite no existen las facturas ni los cobros del ERP: no se publican los objetos <code>crm_ERP_Factura</code> y <code>crm_ERP_CobroPdte</code>, ni la deuda por cuenta ni la gestión de cobro. Tampoco funcionan los resúmenes de ventas anuales (<code>crm_cliente_resumen_ventas_anual</code> y <code>crm_comercial_resumen_ventas_anual</code>).</p>
+</div>
+<h2 id="la-seguridad-es-la-misma-que-en-la-aplicacion">La seguridad es la misma que en la aplicación<a class="headerlink" href="#la-seguridad-es-la-misma-que-en-la-aplicacion" title="Permanent link">¶</a></h2>
+<p>La API trabaja <strong>con un usuario del CRM</strong> y aplica sus permisos igual que la aplicación:</p>
+<ul>
+<li>Un usuario con el rol <strong>Comercial Restringido</strong> solo ve las cuentas de su cartera y lo que cuelga de ellas: contactos, oportunidades, ofertas y sus líneas, notas, delegaciones y facturas. Si pide una cuenta de otra cartera, la API responde <strong>403</strong>.</li>
+<li>Con los roles <strong>Comercial Restringido</strong> y <strong>Users</strong>, cada usuario ve solo <strong>sus gastos</strong> y solo puede modificar <strong>sus actuaciones</strong>.</li>
+<li>Los procesos sobre registros que el usuario no puede modificar se rechazan con un mensaje que lo explica.</li>
+</ul>
+<p>Por eso conviene crear un usuario propio para cada integración, con el rol que corresponda a lo que tiene que hacer, en lugar de usar el del administrador. Los procesos que asignan responsable (oferta rápida, avanzar o finalizar una oportunidad, cambiar el estado de un lead) usan el <strong>empleado</strong> del usuario: el usuario de la integración tiene que tener un empleado asociado.</p>
+<h2 id="activar-la-api">Activar la API<a class="headerlink" href="#activar-la-api" title="Permanent link">¶</a></h2>
+<p>Lo hace un administrador en <strong>Work Area › Admin Work Area › Security › WebAPI</strong>:</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../../docs_assets/images/Ayuda/WebAPI/configuracion-webapi.png" data-desc-position="bottom"><img alt="" src="../../../docs_assets/images/Ayuda/WebAPI/configuracion-webapi.png"></a>
+<em>Fig.1 - Configuración de la Web API.</em></p>
+<ol>
+<li><strong>Enable WebAPI</strong>: enciende la API.</li>
+<li><strong>Datos autorizados</strong>: los objetos, vistas y procesos del CRM ya vienen publicados con los permisos de las tablas anteriores. Aquí se pueden retirar, si en tu empresa no se quiere exponer alguno.</li>
+<li><strong>Personas autorizadas</strong>: en la pestaña <strong>Papeles autorizados</strong> (roles) o <strong>Usuarios autorizados</strong>, marca la columna del <strong>ojo</strong> en los roles o usuarios que pueden usar la API. El CRM ya trae autorizados los roles Admins, Comercial Restringido y Users.</li>
+</ol>
+<p>La columna del <strong>robot</strong> es el permiso para conectar asistentes de IA, que es otra cosa: ver <a href="../Asistentes%20de%20IA%20%28MCP%29/">Asistentes de IA (MCP)</a>.</p>
+<h2 id="pedir-el-token">Pedir el token<a class="headerlink" href="#pedir-el-token" title="Permanent link">¶</a></h2>
+<p>Cada llamada lleva un token, que se pide una vez con el usuario y la contraseña del CRM:</p>
+<div class="language-http highlight"><span class="filename">HTTP</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="err">POST https://&lt;tu-aplicación&gt;/token</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="err">Content-Type: application/x-www-form-urlencoded</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="err">grant_type=password&amp;username=integracion&amp;password=********</span>
+</span></code></pre></div>
+<p>La respuesta trae <code>access_token</code>, que se envía después en la cabecera <code>Authorization</code> de cada llamada:</p>
+<div class="language-http highlight"><span class="filename">HTTP</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="err">Authorization: Bearer eyJhbGciOiJI...</span>
+</span></code></pre></div>
+<h2 id="ejemplos">Ejemplos<a class="headerlink" href="#ejemplos" title="Permanent link">¶</a></h2>
+<p>Todas las direcciones empiezan por <code>https://&lt;tu-aplicación&gt;/webapi</code>.</p>
+<p><strong>Listar cuentas.</strong> Sin filtro devuelve todas las que el usuario puede ver. Cada campo codificado viene acompañado de su texto en un campo <code>&lt;Campo&gt;_flxtext</code> (por ejemplo, el nombre del tipo de cuenta además de su código):</p>
+<div class="language-http highlight"><span class="filename">HTTP</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="err">GET /webapi/list/crm_Cliente?filter=Clientes_Datos.Cliente LIKE '%García%'&amp;pageSize=100</span>
+</span></code></pre></div>
+<p><strong>Ver una cuenta</strong> por su código:</p>
+<div class="language-http highlight"><span class="filename">HTTP</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="err">GET /webapi/object/crm_Cliente/00006</span>
+</span></code></pre></div>
+<p><strong>Registrar una llamada</strong> en una cuenta. Basta con la cuenta, el asunto y la clasificación (1 = llamada); el CRM completa el contacto principal, el empleado y las horas:</p>
+<div class="language-http highlight"><span class="filename">HTTP</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="err">POST /webapi/object/crm_Actuacion</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="err">Content-Type: application/json</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="err">{ "IdCliente": "00006", "Descrip": "Llamada de seguimiento", "ClasificacionCrm": 1 }</span>
+</span></code></pre></div>
+<p><strong>Crear una oportunidad</strong> y, después, <strong>su oferta</strong>:</p>
+<div class="language-http highlight"><span class="filename">HTTP</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="err">POST /webapi/object/crm_Oportunidad</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="err">{ "IdCliente": "00006", "Descrip": "Renovación anual", "FechaEstamadCierre": "2026-12-31T00:00:00", "IdTipoOportunidad": 0, "ImporteProbable": 1000 }</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="err">POST /webapi/exec/CRM_Oportunidad_Generar_Oferta_DLL/crm_Oportunidad/77</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="err">{}</span>
+</span></code></pre></div>
+<p><strong>Ver una oferta.</strong> Las ofertas tienen clave doble (número y revisión), así que se piden con un filtro:</p>
+<div class="language-http highlight"><span class="filename">HTTP</span><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="err">GET /webapi/object/crm_Oferta?filter=Ofertas_Cli_Cabecera.IdOferta=24 AND Ofertas_Cli_Cabecera.Revision=1</span>
+</span></code></pre></div>
+<p><strong>Lanzar un proceso</strong>, por ejemplo marcar una actuación como pendiente:</p>
+<div class="language-http highlight"><span class="filename">HTTP</span><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="err">POST /webapi/exec/crm_ActuacionesPonerPendiente/crm_Actuacion/13</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="err">{}</span>
+</span></code></pre></div>
+<p><strong>Consultar el embudo de ventas:</strong></p>
+<div class="language-http highlight"><span class="filename">HTTP</span><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="err">GET /webapi/list/crm_Oportunidad/crm_oportunidades_totales</span>
+</span></code></pre></div>
+<h3 id="los-filtros">Los filtros<a class="headerlink" href="#los-filtros" title="Permanent link">¶</a></h3>
+<p>El parámetro <code>filter</code> es una condición SQL sobre los campos del objeto. Para evitar ambigüedades, conviene poner delante el nombre de la tabla:</p>
+<table>
+<thead>
+<tr>
+<th>Objeto</th>
+<th>Tabla</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cuentas</td>
+<td><code>Clientes_Datos</code></td>
+</tr>
+<tr>
+<td>Contactos</td>
+<td><code>CRM_Clientes_Contactos</code></td>
+</tr>
+<tr>
+<td>Actuaciones</td>
+<td><code>Seguimiento</code></td>
+</tr>
+<tr>
+<td>Oportunidades</td>
+<td><code>crm_Oportunidades</code></td>
+</tr>
+<tr>
+<td>Ofertas</td>
+<td><code>Ofertas_Cli_Cabecera</code></td>
+</tr>
+<tr>
+<td>Gastos</td>
+<td><code>crm_Gastos</code></td>
+</tr>
+<tr>
+<td>Facturas</td>
+<td><code>Facturas_Cli_Cab</code></td>
+</tr>
+<tr>
+<td>Cobros pendientes</td>
+<td><code>Clientes_Efectos</code></td>
+</tr>
+</tbody>
+</table>
+<p>En la dirección, el filtro tiene que ir codificado (<code>%25</code> en lugar de <code>%</code>, <code>%20</code> en lugar de los espacios…); Postman y la mayoría de herramientas lo hacen solas. El filtro siempre se suma a la seguridad del usuario: no sirve para ver más de lo que el usuario puede ver. Por seguridad, la API <strong>rechaza con 400</strong> los filtros con comentarios (<code>--</code>, <code>/* */</code>), con <code>;</code> o con paréntesis o comillas sin cerrar.</p>
+<h2 id="probar-la-api-con-postman">Probar la API con Postman<a class="headerlink" href="#probar-la-api-con-postman" title="Permanent link">¶</a></h2>
+<p>Postman puede cargar la definición de la API y crear una colección con todas las llamadas:</p>
+<ol>
+<li>En Postman, <strong>Import</strong> y pega la dirección <code>https://&lt;tu-aplicación&gt;/webapi</code>. No hace falta token para importarla.</li>
+<li>Postman crea la colección <strong>FlexygoCRM Web API</strong>, con una carpeta por objeto y las llamadas de cada uno: listar, ver por id, crear, modificar, vistas y procesos.</li>
+<li>En la pestaña <strong>Authorization</strong> de la colección ya viene configurado <strong>OAuth 2.0</strong> con el tipo <em>Password Credentials</em> y la dirección del token. Escribe el usuario y la contraseña del CRM, pulsa <strong>Get New Access Token</strong> y después <strong>Use Token</strong>.</li>
+<li>La dirección de la aplicación está en la variable <code>baseUrl</code> de la colección. Si la aplicación está detrás de un proxy y la dirección no es la correcta, cámbiala ahí.</li>
+</ol>
+<p>También puedes consultar la referencia de la API en el navegador, en <code>https://&lt;tu-aplicación&gt;/scalar</code>.</p>
+<h2 id="si-algo-no-sale">Si algo no sale<a class="headerlink" href="#si-algo-no-sale" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Respuesta</th>
+<th>Por qué</th>
+<th>Qué hacer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>401</strong></td>
+<td>Falta el token o ha caducado</td>
+<td>Pide un token nuevo</td>
+</tr>
+<tr>
+<td><strong>403</strong></td>
+<td>El objeto o el proceso no está publicado, el usuario no tiene permiso de API, o el registro no es suyo (por ejemplo, una cuenta de otra cartera)</td>
+<td>Revisa <strong>Datos autorizados</strong>, <strong>Personas autorizadas</strong> y el rol del usuario</td>
+</tr>
+<tr>
+<td><strong>400</strong></td>
+<td>El filtro no es válido, o falta un campo obligatorio</td>
+<td>El mensaje dice qué falla</td>
+</tr>
+<tr>
+<td><strong>409</strong></td>
+<td>El estado del registro no permite el proceso (por ejemplo, finalizar una oportunidad ya cerrada)</td>
+<td>Es lo esperado</td>
+</tr>
+<tr>
+<td><strong>500</strong> con un mensaje del CRM</td>
+<td>Una regla del CRM ha rechazado la operación, como aceptar la oferta de una cuenta potencial o crear un cliente sin NIF</td>
+<td>Corrige los datos según el mensaje</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+                  </article>
+                </div>
+              
+              
+                
+                <div class="fh-rightsidebar md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                  <div class="md-sidebar__scrollwrap">
+                    <div class="md-sidebar__inner">
+                      
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#que-se-puede-hacer-con-la-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Qué se puede hacer con la API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qué se puede hacer con la API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vistas-de-totales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vistas de totales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procesos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procesos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#la-seguridad-es-la-misma-que-en-la-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      La seguridad es la misma que en la aplicación
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activar-la-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activar la API
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pedir-el-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pedir el token
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#los-filtros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Los filtros
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probar-la-api-con-postman" class="md-nav__link">
+    <span class="md-ellipsis">
+      Probar la API con Postman
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#si-algo-no-sale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Si algo no sale
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                    </div>
+                  </div>
+                </div>
+              
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.path", "navigation.sections", "navigation.instant", "navigation.tracking", "navigation.top", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../../../javascripts/fh-structural/utils.js"></script>
+      
+        <script src="../../../javascripts/fh-structural/components/fh-modal.js"></script>
+      
+        <script src="../../../javascripts/fh-structural/components/fh-copy.js"></script>
+      
+        <script src="../../../javascripts/fh-structural/components/fh-popover.js"></script>
+      
+        <script src="../../../javascripts/fh-structural/components/fh-namepropagator.js"></script>
+      
+        <script src="../../../javascripts/fh-structural/components/flx-navbutton.js"></script>
+      
+        <script src="../../../javascripts/fh-structural/components/fh-versions.js"></script>
+      
+        <script src="../../../javascripts/cultures/default_language.js"></script>
+      
+        <script src="../../../javascripts/cultures/es.js"></script>
+      
+        <script src="../../../javascripts/cultures/en.js"></script>
+      
+        <script src="../../../javascripts/search-shortcut.js"></script>
+      
+        <script src="../../../javascripts/app-config.js"></script>
+      
+        <script src="../../../javascripts/delete/delete.js"></script>
+      
+    
+    <dialog id="navigation-dialog" closedby="any">
+      <p class="input-group">
+        <label>Your flexys URL:</label>
+        <input type="text" id="navigation-dialog-flexy-url" value="https://">
+      </p>
+      <div class="button-container">
+        <button class="button" onclick="_nav(document.getElementById('navigation-dialog-flexy-url').value)">Confirm</button>
+      </div>
+    </dialog>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "zoom"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
