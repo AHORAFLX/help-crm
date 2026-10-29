@@ -37,6 +37,10 @@ La actualización a Flexygo 10 y .NET 9 renueva la interfaz e incorpora el actua
 - **Calendario:** se ajusta el color de fondo. [Más información](../../Ayuda/Calendario.md)
 - **WhatsApp:** el complemento presenta estilos mejorados.
 
+### En actualizaciones posteriores
+
+- **Ayuda:** La ayuda integrada se publica junto con la información de sus versiones.
+
 ## Correcciones
 
 ??? note "Ver las correcciones de esta versión"
