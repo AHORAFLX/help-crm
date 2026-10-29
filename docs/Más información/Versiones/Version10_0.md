@@ -40,6 +40,7 @@ La actualización a Flexygo 10 y .NET 9 renueva la interfaz e incorpora el actua
 ### En actualizaciones posteriores
 
 - **Ayuda:** La ayuda integrada se publica junto con la información de sus versiones.
+- **Administración:** Las imágenes de base de datos de Docker usan SQL Server Express en la versión para la que se han creado.
 
 ## Correcciones
 
