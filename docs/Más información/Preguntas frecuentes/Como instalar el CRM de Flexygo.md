@@ -9,7 +9,7 @@ Ahora CRM está pensada para funcionar tanto con el modelo de datos de [Ahora ER
 El servidor donde se realiza la instalación de CRM debe tener:
 
 - **Internet Information Services (IIS)**, con la característica **WebSocket** habilitada. Si no está instalado, el instalador puede instalarlo.
-- **SQL Server 2022 o superior**. A partir de la versión 10, las bases de datos de la aplicación deben estar en un servidor SQL Server 2022 o posterior. El instalador puede instalar SQL Server Developer Edition para entornos de pruebas.
+- **SQL Server 2017 o superior**. A partir de la versión 10, las bases de datos de la aplicación deben estar en un servidor SQL Server 2017 o posterior. El instalador puede instalar SQL Server Developer Edition para entornos de pruebas.
 - **.NET Hosting Bundle**. El instalador lo instala automáticamente si no lo encuentra.
 - Permisos de administrador en el equipo.
 
